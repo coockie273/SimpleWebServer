@@ -75,7 +75,7 @@ void send_file(int sock, const char* file_path, const char* dot, const char* typ
 
     if (! file) {
 
-        syslog(LOG_ERR, "Failed to open file");
+        syslog(LOG_ERR, "Failed to open file %s", file_path);
         return;
 
     }
